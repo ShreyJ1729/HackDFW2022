@@ -1,0 +1,23 @@
+========================================================================
+ City of Dallas, Texas DART Bus Routes
+------------------------------------------------------------------------
+ https://koordinates.com/layer/101325-city-of-dallas-texas-dart-bus-routes/
+========================================================================
+From: City of Dallas, Texas
+
+CRS: WGS 84
+
+------------------------------------------------------------------------
+ Processing steps applied by Koordinates
+------------------------------------------------------------------------
+
+- imported to Koordinates in Esri JSON format on 09 May 2019
+- reprojected from NAD83 / Texas North Central (ftUS) to WGS 84
+- converted by Koordinates to CSV on 24 Sep 2022 (reference #2642021)
+
+====================
+No license specified
+====================
+
+No license was specified for this layer. This could mean default rights under copyright law for your legal jurisdiction may apply. Please check with Koordinates if you're unsure of your right to access and use this layer.
+

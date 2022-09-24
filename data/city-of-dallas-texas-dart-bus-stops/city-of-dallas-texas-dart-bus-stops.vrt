@@ -1,0 +1,18 @@
+<OGRVRTDataSource>
+  <OGRVRTLayer name="city-of-dallas-texas-dart-bus-stops">
+    <SrcDataSource relativeToVRT="1">city-of-dallas-texas-dart-bus-stops.csv</SrcDataSource>
+    <FeatureCount>909</FeatureCount>
+    <GeometryField field="WKT" reportSrcColumn="FALSE">
+      <GeometryType>wkbPoint</GeometryType>
+      <SRS>EPSG:4326</SRS>
+      <ExtentXMin>-97.0536756468294</ExtentXMin>
+      <ExtentYMin>32.5590581466306</ExtentYMin>
+      <ExtentXMax>-96.5065323641742</ExtentXMax>
+      <ExtentYMax>33.0831312964038</ExtentYMax>
+    </GeometryField>
+    <Field name="stop_name" src="stop_name" type="String" width="100" />
+    <Field name="stop_id" src="stop_id" type="Integer" />
+    <Field name="shape_X" src="shape_X" type="Real" />
+    <Field name="shape_Y" src="shape_Y" type="Real" />
+  </OGRVRTLayer>
+</OGRVRTDataSource>
