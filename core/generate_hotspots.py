@@ -15,6 +15,10 @@ def generate_hotspot_csv(input_filename, columns_of_interest, AMI_WEIGHT=1, T_AM
     df = df[df['cbsa'].str.contains("Dallas-Fort Worth-Arlington")]
     print("df size after filtering DFW: ", len(df))
 
+    # strip block group
+    df_obj = df.select_dtypes(['object'])
+    df[df_obj.columns] = df_obj.apply(lambda x: x.str.strip("\""))
+
     # calculate annual median income
     df['ami'] = df.apply(lambda row: row.t_cost_ami * 100/row.t_ami, axis=1)
 
