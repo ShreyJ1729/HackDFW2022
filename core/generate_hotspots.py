@@ -42,8 +42,8 @@ def generate_hotspot_csv(input_filename, columns_of_interest, AMI_WEIGHT=1, T_AM
     print(sum(exceed_threshold_indices), " hotspots identified")
 
     if save_image:
-        plt.title("Histogram of Poverty Score (Normalized + Clipped)")
-        plt.xlabel("Poverty Score")
+        plt.title("Histogram of Income Index (Normalized + Clipped)")
+        plt.xlabel("Income Index")
         plt.ylabel("Count")
         plt.hist(pScoreNormClip, bins=100)
         plt.savefig(f"./output/pscore-hist-amiW={AMI_WEIGHT}-tamiW={T_AMI_WEIGHT}-sens={HOTSPOT_SENSITIVITY}.png")
