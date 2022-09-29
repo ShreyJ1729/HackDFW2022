@@ -1,18 +1,18 @@
-# def checkLimeable(block_number, longitude, latitude, LIME_LAT= 0.005, LIME_LONG = 0.003):
-#     #use gmaps api to find center of block and run checkLimeable on those coordinates
-#     noLimes = 0
-#     noBuses = 0
-#     listArr = [[type_station, block_id, stop_id]]
-#     closest_stop_id = findClosestStation(longitude, latitude)
-#     for longi in bus_df.shape_X.values:
-#         if (longitude + LIME_LONG >= longi or longitude - LIME_LONG <= longi):
-#             latitude = bus.df.shape_Y.values[longi]
-#             if(latitude + LIME_LAT >= lat or latitude - LIME_LONG <= lat):
-#                     listArr.append(["Lime", block_number,closest_stop_id])
-#                     noLimes+=1
-#         else: 
-#             listArr.append(["Bus", block_number, closest_stop_id])
-#             noBuses+=1
+ def checkLimeable(block_number, longitude, latitude, LIME_LAT= 0.005, LIME_LONG = 0.003):
+     #use gmaps api to find center of block and run checkLimeable on those coordinates
+     noLimes = 0
+     noBuses = 0
+     listArr = [[type_station, block_id, stop_id]]
+     closest_stop_id = findClosestStation(longitude, latitude)
+     for longi in bus_df.shape_X.values:
+         if (longitude + LIME_LONG >= longi or longitude - LIME_LONG <= longi):
+             latitude = bus.df.shape_Y.values[longi]
+             if(latitude + LIME_LAT >= lat or latitude - LIME_LONG <= lat):
+                     listArr.append(["Lime", block_number,closest_stop_id])
+                     noLimes+=1
+         else: 
+             listArr.append(["Bus", block_number, closest_stop_id])
+             noBuses+=1
 
 import pandas as pd
 import math
